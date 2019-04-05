@@ -3,7 +3,7 @@
 
 A *colorful* logging utility for **NodeJS** programs.
 
-![Screenshot of gloc](images/example.png)
+![Screenshot of golc](images/example.png)
 
 ## Installation 📦
 
@@ -100,7 +100,7 @@ Where possible options are:
 
 A style object it's really just an array containing the [`chalk`](https://github.com/chalk/chalk) options that you want to combine, as strings.
 
-You can check how that works [right here](https://github.com/bugged-reality/gloc/blob/master/index.js#L13)! 🔍👀
+You can check how that works [right here](https://github.com/bugged-reality/golc/blob/master/index.js#L13)! 🔍👀
 
 ### License
 
@@ -109,7 +109,7 @@ You can check how that works [right here](https://github.com/bugged-reality/gloc
 ### Contributions / Suggestions
 
 
-[Welcome](https://github.com/bugged-reality/gloc/pulls), and [welcome](https://github.com/bugged-reality/gloc/issues)! 🤗
+[Welcome](https://github.com/bugged-reality/golc/pulls), and [welcome](https://github.com/bugged-reality/golc/issues)! 🤗
 
 ### Inspiration
 
