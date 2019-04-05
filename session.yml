@@ -1,0 +1,209 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/vincent.defeo/Workspace/npm/golc
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 208
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 60
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 232
+    content: "\e[?1034hvincent-defeo:golc vincent.defeo$ "
+  - delay: 1143
+    content: 'n'
+  - delay: 496
+    content: p
+  - delay: 100
+    content: m
+  - delay: 108
+    content: ' '
+  - delay: 498
+    content: i
+  - delay: 95
+    content: ' '
+  - delay: 702
+    content: g
+  - delay: 122
+    content: o
+  - delay: 141
+    content: l
+  - delay: 93
+    content: c
+  - delay: 337
+    content: "\r\n"
+  - delay: 392
+    content: "\e[?25l⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 136
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 50
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 52
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 55
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 52
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 54
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 55
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 51
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 52
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 51
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 54
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 52
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 55
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 51
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 51
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 53
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 55
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 52
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 56
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 50
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 52
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 56
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 53
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 53
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 53
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 48
+    content: "⸨\e[90m░░░░░░░░░░░░░░░░░░\e[0m⸩ ⠧ rollbackFailedOptional: \e[34;40mverb\e[0m \e[35mnpm-session\e[0m 826b7f32361bb411\e[0m\e[K\r"
+  - delay: 30
+    content: "\r\e[K\e[?25h\e[37;40mnpm\e[0m \e[0m\e[31;40mERR!\e[0m \e[0m\e[35mcode\e[0m ENOSELF\r\n\e[0m\e[37;40mnpm\e[0m \e[0m\e[31;40mERR!\e[0m\e[35m\e[0m Refusing to install package with name \"golc\" under a package\r\n\e[0m\e[37;40mnpm\e[0m \e[0m\e[31;40mERR!\e[0m\e[35m\e[0m also called \"golc\". Did you name your project the same\r\n\e[0m\e[37;40mnpm\e[0m \e[0m\e[31;40mERR!\e[0m\e[35m\e[0m as the dependency you're installing?\r\n\e[0m\e[37;40mnpm\e[0m \e[0m\e[31;40mERR!\e[0m\e[35m\e[0m \r\n\e[0m\e[37;40mnpm\e[0m \e[0m\e[31;40mERR!\e[0m\e[35m\e[0m For more information, see:\r\n\e[0m\e[37;40mnpm\e[0m \e[0m\e[31;40mERR!\e[0m\e[35m\e[0m     <https://docs.npmjs.com/cli/install#limitations-of-npms-install-algorithm>\r\n\e[0m"
+  - delay: 10
+    content: "\r\n\e[37;40mnpm\e[0m \e[0m\e[31;40mERR!\e[0m\e[35m\e[0m A complete log of this run can be found in:\r\n\e[0m\e[37;40mnpm\e[0m \e[0m\e[31;40mERR!\e[0m\e[35m\e[0m     /Users/vincent.defeo/.npm/_logs/2019-04-05T17_23_05_385Z-debug.log\r\n\e[0m"
+  - delay: 6
+    content: 'vincent-defeo:golc vincent.defeo$ '
+  - delay: 4256
+    content: e
+  - delay: 45
+    content: x
+  - delay: 360
+    content: "\b\e[K"
+  - delay: 139
+    content: "\b\e[K"
+  - delay: 142
+    content: "\a"
+  - delay: 124
+    content: "logout\r\n"
