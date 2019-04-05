@@ -1,44 +1,93 @@
 # This is `golc` 🌈📝
 <sup><sup>(Since `clog` was taken)</sup></sup>
 
-`gloc` is a logging utility for **NodeJS** programs.
+A *colorful* logging utility for **NodeJS** programs.
 
 ![Screenshot of gloc](images/example.png)
 
-### Installation 📦
+## Installation 📦
 
 ```
 npm i --save golc
 ```
 
-### Features 🍕
+## Features 🍕
 
 + 6 **log levels** + disabling
-```
-NONE, ERROR, WARN, INFO, LOG, DEBUG, TRACE
-```
-+ customizable **color schemes** (via `chalk` API)
 
-+ optional log **badges** (with *name* and *kind*)
++ customizable **color schemes** (via [`chalk`](https://github.com/chalk/chalk) API)
 
-### Customization 🎛
++ optional log **badges** (with *label* and *kind*)
+
+## Usage
+
+Import it
+```
+const Golc = require('golc')
+```
+
+Make it
+```
+const L = new Golc('Logger', {...})
+```
+
+... Use it!
+```
+function doTheJob() {
+  try {
+    job()
+  } catch (e) {
+    L.error(e)
+  }
+
+  L.info('Job done! 👍')
+}
+```
+
+(Make more!)
+
+```
+const BLog = new Golc('BeautifulLogger', {...})
+const SLog = new Golc('ShyLogger', {...})
+```
+
+ * * *
+
+You can suppress logs of a certain level just by setting the `level` on your logger.
+```
+L.level = L.ERROR
+```
+
+Possible values are: `NONE`, `ERROR`, `WARN`, `INFO`, `LOG`, `DEBUG`, `TRACE`.
+
+They go in order, so if you set `L.level = L.LOG`, you will get: `ERROR`, `WARN`, `INFO` and `LOG`.
+
+> Beware! If you're logging costly operations, wrap your logic in `if`s!
+
+```
+if (L.level >= L.INFO) {
+  L.info(costlyOperation())
+}
+```
+
+## Customization 🎛
 The constructor accepts a label, which will be used to tag your logs, and an options object:
 
 ```
 const L = new Golc('Logger', options)
 ```
 
-Where options are:
+Where possible options are:
 
 ```
 {
-  withLabel: true,
-  withKind: false,
-  withNewline: false,
+  withLabel: true, // Label of the logger in the badge
+  withKind: false, // Kind of log in the badge (Error, Warn, ...)
+  withNewline: false, // Put a newline between the badge and the message
   styles: {
     error: {
-      badge: ['bgRed', 'bold'],
-      message: ['red', 'bgYellow']
+      badge: ['bgRed', 'bold'], // Badge styles
+      message: ['red', 'bgYellow'] // Message styles
     },
     warn: {...},
     info: {...},
@@ -49,6 +98,18 @@ Where options are:
 }
 ```
 
-A style object it's really just an array containing the `chalk` options that you want to combine, as strings.
+A style object it's really just an array containing the [`chalk`](https://github.com/chalk/chalk) options that you want to combine, as strings.
 
-You can check how that works [right here]()! 🔍👀
+You can check how that works [right here](https://github.com/bugged-reality/gloc/blob/master/index.js#L13)! 🔍👀
+
+### License
+
+[MIT](LICENSE)
+
+### Contributions / Suggestions
+
+[Welcome](pulls), and [welcome](issues)! 🤗
+
+### Inspiration
+
+[ulog](https://github.com/download/ulog)
