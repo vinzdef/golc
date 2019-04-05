@@ -1,12 +1,32 @@
 {
   "name": "golc",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Colorful logging utility with log levels",
-  "keywords": ["log", "logging", "color", "levels"],
+  "keywords": [
+    "log",
+    "logging",
+    "color",
+    "levels"
+  ],
   "main": "index.js",
-  "author": "",
-  "license": "MIT",
+  "directories": {
+    "example": "examples"
+  },
   "dependencies": {
     "chalk": "^2.4.2"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugged-reality/golc.git"
+  },
+  "author": "Vincent De feo (https://github.com/bugged-reality/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bugged-reality/golc/issues"
+  },
+  "homepage": "https://github.com/bugged-reality/golc#readme"
 }
