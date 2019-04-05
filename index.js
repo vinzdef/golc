@@ -5,7 +5,7 @@ const methods = ['error', 'warn', 'info', 'log', 'debug', 'trace']
 const LEVELS = {
   NONE: 0,
   ...Object.entries(methods).reduce((acc, curr) => {
-    acc[curr[1].toUpperCase()] = curr[0] + 1
+    acc[curr[1].toUpperCase()] = Number(curr[0]) + 1
     return acc
   }, {})
 }
@@ -23,7 +23,7 @@ function logger(level, message) {
 
   const badgeC = getChalk(styles[level].badge)
   let text = withLabel
-    ? badgeC(` ${this.name} `)
+    ? badgeC(` ${this.label} `)
     : ''
 
   text += withLabel && withKind
@@ -44,16 +44,16 @@ function logger(level, message) {
 }
 
 class Golc {
-  constructor(name, options) {
-    this.name = name
+  constructor(label, options = {}) {
+    this.label = label
     this.options = {...defaultOptions, ...options}
-    this.currentLevel = 3
+    this._level = LEVELS.INFO
 
     Object.assign(this, LEVELS)
 
     methods.forEach(method => {
       this[method] = function(message) {
-        if (this.currentLevel < LEVELS[method.toUpperCase()]) {
+        if (this._level < LEVELS[method.toUpperCase()]) {
           return
         }
 
@@ -62,8 +62,12 @@ class Golc {
     })
   }
 
-  setLevel(level) {
-    this.currentLevel = level
+  set level(l) {
+    if (isNaN(l) || l < LEVELS.NONE || l > LEVELS.TRACE) {
+      throw new Error(`Setting illegal golc logging level: ${l}`)
+    }
+
+    this._level = Number(l)
   }
 }
 

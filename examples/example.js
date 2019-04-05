@@ -1,5 +1,5 @@
 const Golc = require('../')
-const L = new Golc('Logger', {withKind: false, withLabel: false})
+const L = new Golc('Logger')
 
 function logAll() {
   L.error('This is how `error` looks like!')
@@ -12,7 +12,7 @@ function logAll() {
 
 function logLevel(LEVEL) {
   console.log(`\n\nSetting Level: ${LEVEL}\n`)
-  L.setLevel(L[LEVEL])
+  L.level = L[LEVEL]
   logAll()
   console.log('\n-------------------------\n')
 }
