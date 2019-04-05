@@ -1,43 +1,54 @@
-# This is `golc` 🌈
+# This is `golc` 🌈📝
 <sup><sup>(Since `clog` was taken)</sup></sup>
 
-`gloc` is a logging utility for **NodeJS** programs, which supports:
+`gloc` is a logging utility for **NodeJS** programs.
 
-+ 6 **log levels** and disabling
+![Screenshot of gloc](images/example.png)
+
+### Installation 📦
+
+```
+npm i --save golc
+```
+
+### Features 🍕
+
++ 6 **log levels** + disabling
 ```
 NONE, ERROR, WARN, INFO, LOG, DEBUG, TRACE
 ```
 + customizable **color schemes** (via `chalk` API)
+
++ optional log **badges** (with *name* and *kind*)
+
+### Customization 🎛
+The constructor accepts a label, which will be used to tag your logs, and an options object:
+
 ```
-const L = new Golc('Logger', {
+const L = new Golc('Logger', options)
+```
+
+Where options are:
+
+```
+{
+  withLabel: true,
+  withKind: false,
+  withNewline: false,
   styles: {
     error: {
       badge: ['bgRed', 'bold'],
       message: ['red', 'bgYellow']
     },
-    warn: {
-      badge: ['bgYellow', 'black'],
-      message: ['yellow', 'bgBlack']
-    },
-    info: {
-      badge: ['bgBlue', 'bold'],
-      message: ['blue', 'bgWhite']
-    },
-    log: {
-      badge: ['bgBlack', 'bold'],
-      message: ['white']
-    },
-    debug: {
-      badge: ['bgGreen', 'white', 'bold'],
-      message: ['green', 'bgBlack']
-    },
-    trace: {
-      badge: ['bgMagenta', 'bold'],
-      message: ['magenta', 'bgWhite']
-    }
+    warn: {...},
+    info: {...},
+    log: {...},
+    debug: {...},
+    trace: {...}
   }
-})
+}
 ```
 
-+ optional log **badges** (with *name* and *kind*)
+A style object it's really just an array containing the `chalk` options that you want to combine, as strings.
 
+You can check how that works [right here]()! 🔍👀
