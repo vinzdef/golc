@@ -66,7 +66,7 @@ By default log levels are set basing on the environment you're running in.
 
 You can suppress logs of a certain level just by setting the `level` on your logger.
 ```javascript
-L.level = L.ERROR
+L.level = L.ERROR // Will only log errors
 ```
 
 Possible values are: `NONE`, `ERROR`, `WARN`, `INFO`, `LOG`, `DEBUG`, `TRACE`.
