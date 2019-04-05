@@ -1,13 +1,17 @@
 # This is `golc` 🌈📝
 <sup><sup>(Since `clog` was taken)</sup></sup>
 
+![Version](https://img.shields.io/npm/v/golc.svg?color=green&label=version)
+![Downloads](https://img.shields.io/npm/dt/golc.svg)
+
+
 A *colorful* logging utility for **NodeJS** programs.
 
 ![Screenshot of golc](images/example.png)
 
 ## Installation 📦
 
-```
+```sh
 npm i --save golc
 ```
 
@@ -19,20 +23,20 @@ npm i --save golc
 
 + optional log **badges** (with *label* and *kind*)
 
-## Usage
+## Usage 🚀
 
 Import it
-```
+```javascript
 const Golc = require('golc')
 ```
 
 Make it
-```
+```javascript
 const L = new Golc('Logger', {...})
 ```
 
 ... Use it!
-```
+```javascript
 function doTheJob() {
   try {
     job()
@@ -44,17 +48,19 @@ function doTheJob() {
 }
 ```
 
-(Make more!)
+Make more!
 
-```
+```javascript
 const BLog = new Golc('BeautifulLogger', {...})
 const SLog = new Golc('ShyLogger', {...})
 ```
 
+It is *Production Ready️™* as in: I am using it in production
+
 ### Suppressing logs
 
 You can suppress logs of a certain level just by setting the `level` on your logger.
-```
+```javascript
 L.level = L.ERROR
 ```
 
@@ -62,9 +68,11 @@ Possible values are: `NONE`, `ERROR`, `WARN`, `INFO`, `LOG`, `DEBUG`, `TRACE`.
 
 They go in order, so if you set `L.level = L.LOG`, you will get: `ERROR`, `WARN`, `INFO` and `LOG`.
 
-> Beware! If you're logging costly operations, wrap your logic in `if`s!
+> **Beware !!!**
+>
+>  If you're logging costly operations, wrap your logic in conditions!
 
-```
+```javascript
 if (L.level >= L.INFO) {
   L.info(costlyOperation())
 }
@@ -73,13 +81,13 @@ if (L.level >= L.INFO) {
 ## Customization 🎛
 The constructor accepts a label, which will be used to tag your logs, and an options object:
 
-```
+```javascript
 const L = new Golc('Logger', options)
 ```
 
 Where possible options are:
 
-```
+```javascript
 {
   withLabel: true, // Label of the logger in the badge
   withKind: false, // Kind of log in the badge (Error, Warn, ...)
