@@ -34,7 +34,11 @@ function logger(level, message) {
     ? badgeC(` ${level.toUpperCase()} : `)
     : ''
 
-  text += getChalk(styles[level].message)(` ${withNewline ? '\n' : ''}${message} `)
+  text += withNewline
+    ? '\n'
+    : ''
+
+  text += getChalk(styles[level].message)(` ${message} `)
 
   if (console[level]) {
     console[level](text)
@@ -47,7 +51,9 @@ class Golc {
   constructor(label, options = {}) {
     this.label = label
     this.options = {...defaultOptions, ...options}
-    this.level = LEVELS.INFO
+    this.level = process.env.NODE_ENV === 'production'
+      ? LEVELS.INFO
+      : LEVELS.TRACE
 
     Object.assign(this, LEVELS)
 
