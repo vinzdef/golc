@@ -16,7 +16,8 @@ npm i --save golc
 ```
 
 > It is *Production Ready️™* as in: I am using it in production
->
+>gs
+
 ## Features 🍕
 
 + 6 **log levels** + disabling
@@ -34,7 +35,7 @@ const Golc = require('golc')
 
 Make it
 ```javascript
-const L = new Golc('Logger', {...})
+const L = new Golc('MyLogger')
 ```
 
 ... Use it!
@@ -70,7 +71,7 @@ They go in order, so if you set `L.level = L.LOG`, you will get: `ERROR`, `WARN`
 
 > **Beware !!!**
 >
->  If you're logging costly operations, wrap your logic in conditions!
+>  If you're logging costly operations, wrap your logic in conditions like so:
 
 ```javascript
 if (L.level >= L.INFO) {
@@ -89,7 +90,7 @@ Where possible options are:
 
 ```javascript
 {
-  withLabel: true, // Label of the logger in the badge
+  withLabel: true, // Label of the logger in the badge (It's name)
   withKind: false, // Kind of log in the badge (Error, Warn, ...)
   withNewline: false, // Put a newline between the badge and the message
   styles: {
@@ -117,7 +118,7 @@ You can check how that works [right here](https://github.com/bugged-reality/golc
 ### Contributions / Suggestions
 
 
-[Welcome](https://github.com/bugged-reality/golc/pulls), and [welcome](https://github.com/bugged-reality/golc/issues)! 🤗
+[Welcome](https://github.com/bugged-reality/golc/pulls) and [welcome](https://github.com/bugged-reality/golc/issues)! 🤗
 
 ### Inspiration
 
