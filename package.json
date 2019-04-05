@@ -1,6 +1,6 @@
 {
   "name": "golc",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Colorful logging utility with log levels",
   "keywords": [
     "log",
