@@ -16,7 +16,6 @@ npm i --save golc
 ```
 
 > It is *Production Ready️™* as in: I am using it in production
->gs
 
 ## Features 🍕
 
