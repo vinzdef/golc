@@ -1,5 +1,5 @@
 # This is `golc` 🌈
-<sub><sup>(Since `clog` was taken)</sup></sub>
+<sup><sup>(Since `clog` was taken)</sup></sup>
 
 `gloc` is a logging utility for **NodeJS** programs, which supports:
 
