@@ -15,6 +15,8 @@ A *colorful* logging utility for **NodeJS** programs.
 npm i --save golc
 ```
 
+> It is *Production Ready️™* as in: I am using it in production
+>
 ## Features 🍕
 
 + 6 **log levels** + disabling
@@ -55,10 +57,8 @@ const BLog = new Golc('BeautifulLogger', {...})
 const SLog = new Golc('ShyLogger', {...})
 ```
 
-> It is *Production Ready️™* as in: I am using it in production
-
 * * *
-### Suppressing logs
+#### Suppressing logs
 You can suppress logs of a certain level just by setting the `level` on your logger.
 ```javascript
 L.level = L.ERROR
