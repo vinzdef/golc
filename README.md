@@ -61,7 +61,8 @@ const SLog = new Golc('ShyLogger', {...})
 #### Suppressing logs
 
 By default log levels are set basing on the environment you're running in.
-`production` sets logs to `INFO` level, others will have all the logs enabled.
+
+`NODE_ENV=production` sets logs to `INFO` level, others will have all the logs enabled.
 
 You can suppress logs of a certain level just by setting the `level` on your logger.
 ```javascript
