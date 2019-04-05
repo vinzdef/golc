@@ -1,8 +1,8 @@
 # This is `golc` 🌈📝
 <sup><sup>(Since `clog` was taken)</sup></sup>
 
-![Version](https://img.shields.io/npm/v/golc.svg?color=green&label=version)
-![Downloads](https://img.shields.io/npm/dt/golc.svg)
+[![Version](https://img.shields.io/npm/v/golc.svg?color=green&label=version)](https://www.npmjs.com/package/golc)
+[![Downloads](https://img.shields.io/npm/dt/golc.svg)](https://www.npmjs.com/package/golc)
 
 
 A *colorful* logging utility for **NodeJS** programs.
