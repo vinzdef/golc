@@ -51,7 +51,7 @@ const BLog = new Golc('BeautifulLogger', {...})
 const SLog = new Golc('ShyLogger', {...})
 ```
 
- * * *
+### Suppressing logs
 
 You can suppress logs of a certain level just by setting the `level` on your logger.
 ```
@@ -108,7 +108,8 @@ You can check how that works [right here](https://github.com/bugged-reality/gloc
 
 ### Contributions / Suggestions
 
-[Welcome](pulls), and [welcome](issues)! 🤗
+
+[Welcome](https://github.com/bugged-reality/gloc/pulls), and [welcome](https://github.com/bugged-reality/gloc/issues)! 🤗
 
 ### Inspiration
 
