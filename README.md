@@ -55,10 +55,10 @@ const BLog = new Golc('BeautifulLogger', {...})
 const SLog = new Golc('ShyLogger', {...})
 ```
 
-It is *Production Ready️™* as in: I am using it in production
+> It is *Production Ready️™* as in: I am using it in production
 
+* * *
 ### Suppressing logs
-
 You can suppress logs of a certain level just by setting the `level` on your logger.
 ```javascript
 L.level = L.ERROR
