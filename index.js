@@ -47,13 +47,13 @@ class Golc {
   constructor(label, options = {}) {
     this.label = label
     this.options = {...defaultOptions, ...options}
-    this._level = LEVELS.INFO
+    this.level = LEVELS.INFO
 
     Object.assign(this, LEVELS)
 
     methods.forEach(method => {
       this[method] = function(message) {
-        if (this._level < LEVELS[method.toUpperCase()]) {
+        if (this.level < LEVELS[method.toUpperCase()]) {
           return
         }
 
@@ -68,6 +68,10 @@ class Golc {
     }
 
     this._level = Number(l)
+  }
+
+  get level() {
+    return this._level
   }
 }
 
